@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div>
+    <div class="text-center">
+        <img src="{% static 'core/image/prof-pic.jpg' %}" alt="Profile Pic" class="img-thumbnail mt-4" width="150">
+    </div>
+    <div class="text-white mt-4 mx-5 text-justify">
+        <h1 class="font-weight-bold st-font">Hello,</h1>
+        <div class="px-4" style="line-height: 2rem;">
+            <p style="text-indent: 100px;">
+                <i>I am <b class="text-warning">Rakesh Gain</b> ,I am passionate about my work. Because I love what I do, I
+                have a steady source of motivation that drives me to do my best. In my last job, this passion led me to
+                challenge myself daily and learn new skills that helped me to do better work. For example, I taught
+                myself how to use Photoshop to improve the quality of our photos and graphics. I soon became the go-to
+                person for any design.</i> <br></p>
+            <p style="text-indent: 100px;">
+                <i>Im a people person. I love meeting new people and learning about their lives
+                and their backgrounds. I can almost always find common ground with strangers, and I like making people
+                feel comfortable in my presence. I find this skill is especially helpful when kicking off projects with
+                new clients. In my previous job, my clients’ customer satisfaction scores were 15 percent over the
+                company average.</i>
+            </p>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 me-4 ">Hired Me</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">contact Me</a>
+    </div>
+</div>
+{% endblock content %}
