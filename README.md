@@ -37,7 +37,7 @@ Go to the project directory
 
 - First install all the requirements to run this project.You will get all the required packages from **req.txt** file.
 ```bash
-  $ pip install -r requirements.txt
+  $ pip install -r req.txt
 ```
   - *Note : Before installing all the requirements make sure you are on the directoty where req.txt is located .*
 
